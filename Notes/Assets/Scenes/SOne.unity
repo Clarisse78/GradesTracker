@@ -28773,6 +28773,7 @@ MonoBehaviour:
   - {fileID: 1008483433}
   - {fileID: 1318872260}
   moyenneGENERAL: {fileID: 198167711}
+  moyenneGActual: 0
   S: 1
 --- !u!1 &663129466
 GameObject:

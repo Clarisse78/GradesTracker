@@ -24,6 +24,8 @@ public class Menu : MonoBehaviour
 
     public static int numberSemester;
 
+    public double moyenneGActual;
+    
     public int S;
     // Start is called before the first frame update
     void Start()
@@ -129,6 +131,8 @@ public class Menu : MonoBehaviour
             }
         }
         File.WriteAllText(Application.dataPath + "/" + $"/save{numberSemester}.txt", save);
+        Comparaison.noteGSemester[S - 1] = moyenneGActual;
+        Comparaison.SaveG();
     }
 
     public void CalculMoyenneGeneral()
@@ -153,8 +157,10 @@ public class Menu : MonoBehaviour
         else
         {
             moyenneGENERAL.text = "Moyenne générale : " + finish.ToString("G", CultureInfo.InvariantCulture);
+            moyenneGActual = finish;
         }
     }
+    
 
     public void CalculSI()
     {

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SThree.unity
     guid: b9bedf91aa856ca4b96500cc26ec2214
+  - enabled: 1
+    path: Assets/Scenes/Comp.unity
+    guid: b4665d61c95be2844a51efc530316acb
   m_configObjects: {}
